@@ -1,0 +1,116 @@
+// Файл обнуляющих стилей
+@import "breakpoints.scss";
+@import "colors.scss";
+@import "fonts.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "main.scss";
+@import "nullstyle.scss";
+@import "scroll-up.scss";
+@import "scrollbar.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+body{
+  font-family: $myFont;
+  background-color: $baseColor;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: clamp(32px, 4vw, 65px);
+  line-height: 120%;
+  letter-spacing: 1.2px;
+ }
+
+h2 {
+  font-size: clamp(32px, 4vw, 55px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  margin: 0px 0px 24px 0px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: clamp(20px, 4vw, 24px);
+  font-style: normal;
+  line-height: 150%; /* 36px */
+  color: #fff;
+}
+
+p {
+  font-weight: 400;
+  font-size: clamp(16px, 4vw, 18px);
+  line-height: 150%;
+  font-style: normal;
+  color: #8491A0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0px 70px;
+  @include xs {
+      padding: 0px 15px;
+  }
+  @include sm {
+      padding: 0px 15px;
+  }
+  @include md {
+      padding: 0px 40px;
+  }
+}
+
+section{
+  margin: 0px 0px 120px 0px;
+  @media (max-width: 767px){
+    margin: 0px 0px 80px 0px;
+  }
+}
+
+section:first-of-type{
+  @include xs {
+    margin: 80px 0px 60px 0px;
+  }
+  @include sm {
+    margin: 80px 0px 60px 0px;
+  }
+  @include md {
+    margin: 100px 0px 80px 0px;
+  }
+  @include lg {
+    margin: 130px 0px 0px 0px;
+  }
+  @include xl {
+    margin: 150px 0px 0px 0px;
+  }
+}
+
+.top-title{
+  color: $lightGrey;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+
+

@@ -1,0 +1,78 @@
+.footer {
+    background-color: $levelColor;
+    @include xs {
+        padding: 40px 0px 20px;
+    }
+    @include sm {
+        padding: 40px 0px 20px;
+    }
+    @include md {
+        padding: 40px 0px 20px;
+    }
+    @include lg {
+        padding: 80px 0px 20px 0px;
+    }
+    @include xl {
+        padding: 80px 0px 30px 0px;
+    }
+    // .footer__row
+    &__row {
+        display: flex;
+        margin: 0px -20px;
+    }
+    // .footer__column
+    &__column {
+        padding: 0px 20px;
+        flex: 0 1 50%;
+    }
+    &__logo {
+        margin: 0px 0px 32px 0px;
+    }
+    // .footer__social
+    &__social i{
+        font-size: 28px;
+        margin: 0px 24px 0px 0px;
+        color: #26A7DE;
+        transition: all .8s ease 0s;
+    }
+    &__social i:hover{
+        opacity: 0.6;
+    }
+    // .footer__nav
+    &__nav ul {
+        @media (min-width: 600px){
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+    }
+    // .footer__list
+    &__list a{
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 250%; 
+        transition: all 0.8s ease 0s;
+        @media (min-width: 600px){
+            line-height: 350%; 
+        }
+    }
+    &__list a:hover{
+        color: 	#bf8bff;
+    }
+    // .footer__copy
+    &__copy{
+        display: block;
+        text-align: center;
+        color: $lightGrey;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        margin: 50px 0px 0px 0px;
+    }
+    &__copy a{
+        font-size: 14px;
+        color: $lightGrey;
+    }
+}
